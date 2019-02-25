@@ -1,0 +1,52 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header ">
+                        <h4 class="card-title">Registro</h4>
+                        <br/>
+                        <br/>
+                        <p class="card-category">Datos del Propietario</p>
+                    </div>
+                    <form>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Numero de placa" id="placa" [(ngModel)]="parking.numPlaca" type="text">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Cilidraje" type="text">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-select placeholder="TIPO VEHICULO">
+                                            <mat-option [value]="MOTO">
+                                                MOTO
+                                            </mat-option>
+                                            <mat-option [value]="CARRO">
+                                                CARRO
+                                            </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+
+
+                            <button mat-raised-button type="submit" class="btn btn-danger pull-right" (click)="consultarDato()">Enviar datos</button>
+
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
